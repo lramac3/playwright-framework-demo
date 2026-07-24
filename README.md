@@ -1,6 +1,6 @@
 # Playwright Framework Demo
 
-![CI](https://github.com/lramac3/playwright-framework-demo/actions/workflows/playwright.yml/badge.svg)
+[![CI](https://github.com/lramac3/playwright-framework-demo/actions/workflows/playwright.yml/badge.svg)](https://github.com/lramac3/playwright-framework-demo/actions/workflows/playwright.yml)
 
 This project demonstrates a pragmatic Playwright setup that mirrors a real-world workflow: helper-driven browser actions, selective fixtures for authenticated scenarios, imperative `beforeEach` setup, and CI sharding for faster feedback.
 
