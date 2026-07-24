@@ -1,0 +1,18 @@
+{
+  "name": "playwright-framework-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright demo project with helper-driven tests, selective fixtures, storageState auth, and CI sharding.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
