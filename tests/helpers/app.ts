@@ -17,7 +17,7 @@ export class AppHelpers {
   }
 
   async addFirstItemToCart() {
-    await this.page.locator('.inventory_item').first().locator('button').click();
+    await this.page.getByRole('button', { name: /add to cart/i }).first().click();
     await this.page.locator('.shopping_cart_badge').waitFor();
   }
 }
