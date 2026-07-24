@@ -1,5 +1,8 @@
 import { Page } from '@playwright/test';
 
+const defaultUsername = process.env.SAUCE_USERNAME ?? 'standard_user';
+const defaultPassword = process.env.SAUCE_PASSWORD ?? 'secret_sauce';
+
 export class AppHelpers {
   constructor(private page: Page) {}
 
@@ -8,7 +11,7 @@ export class AppHelpers {
     await this.page.getByText('Swag Labs').waitFor();
   }
 
-  async login(username = 'standard_user', password = 'secret_sauce') {
+  async login(username = defaultUsername, password = defaultPassword) {
     await this.page.goto('/');
     await this.page.locator('[data-test="username"]').fill(username);
     await this.page.locator('[data-test="password"]').fill(password);
