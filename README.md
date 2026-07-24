@@ -31,3 +31,9 @@ npm run test:smoke
 ## CI
 
 The GitHub Actions workflow runs smoke and regression suites in sharded matrix jobs to keep execution fast and predictable.
+
+### Passing-suite preview
+
+![Playwright HTML report preview](docs/images/playwright-report-preview.svg)
+
+This visual gives visitors a quick sense of the passing suite and the report structure without needing to run the tests locally.
